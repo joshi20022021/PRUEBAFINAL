@@ -179,25 +179,25 @@ body.ready .replay { opacity: 1; }
 @media (max-width: 720px) {
   .topbar, .footer-note { width: calc(100% - 36px); }
   .date-note { display: none; }
-  .scene { width: calc(100% - 16px); min-height: 760px; height: calc(100svh - 82px); max-height: 860px; border-radius: 22px; }
+  .scene { width: calc(100% - 16px); min-height: 740px; height: 740px; max-height: none; border-radius: 22px; }
   .intro-copy { top: 6%; left: 7%; }
-  h1 { font-size: clamp(49px,14vw,67px); }
-  .intro-text { max-width: 245px; }
+  h1 { font-size: clamp(46px,11vw,60px); }
+  .intro-text { max-width: 260px; }
   .scene-caption { top: 4.5%; right: 6%; }
   .scene-caption .caption-line, .scene-caption #scene-status { display: none; }
-  .bouquet-stage { left: 61%; bottom: 12%; transform: translateX(-50%) scale(.58); }
-  .scene[data-mode="field"] .bouquet-stage, .scene[data-mode="landscape"] .bouquet-stage { left: 50%; bottom: 16%; transform: translateX(-50%) scale(.46); }
-  .scene[data-mode="butterflies"] .bouquet-stage { left: 50%; bottom: 15%; transform: translateX(-50%) scale(.55); }
+  .bouquet-stage { left: 64%; bottom: 18%; transform: translateX(-50%) scale(.44); }
+  .scene[data-mode="field"] .bouquet-stage, .scene[data-mode="landscape"] .bouquet-stage { left: 50%; bottom: 18%; transform: translateX(-50%) scale(.42); }
+  .scene[data-mode="butterflies"] .bouquet-stage { left: 50%; bottom: 18%; transform: translateX(-50%) scale(.48); }
   .bouquet-note { right: -45px; }
   .intro-progress { left: 7%; bottom: 4%; }
-  .controls { left: 3%; right: 3%; bottom: 2.5%; }
-  .controls-title { text-align: center; }
+  .controls { left: 3%; right: 3%; bottom: 2%; }
+  .controls-title { margin-bottom: 6px; text-align: center; }
   .control-buttons { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; width: 100%; max-width: none; }
-  .scene-button { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-width: 0; min-height: 92px; padding: 7px 4px; text-align: center; }
+  .scene-button { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-width: 0; min-height: 82px; padding: 6px 4px; text-align: center; }
   .button-number, .button-copy small { display: none; }
   .button-icon { width: 34px; height: 34px; }
   .button-copy strong { margin: 0; font-family: var(--sans); font-size: 9px; white-space: normal; line-height: 1.15; }
-  .replay { top: auto; right: 5%; bottom: 16%; border-bottom: 0; }
+  .replay { top: auto; right: 5%; bottom: 15%; border-bottom: 0; }
   .footer-note { min-height: 55px; justify-content: center; text-align: center; }
   .footer-note p:first-child { display: none; }
   .sun { width: 85px; top: 10%; right: 8%; }
