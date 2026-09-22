@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8e8" />
+    <meta name="description" content="Un jardín digital lleno de flores amarillas, luz y buena energía." />
+    <title>Flor Amarilla | Un poquito de sol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Flor Amarilla, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>flor<span class="brand-accent">amarilla</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#historia">La historia</a>
+        <a href="#jardin">El jardín</a>
+        <a href="#mensaje">Un mensaje</a>
+      </nav>
+
+      <a class="header-button" href="#mensaje">Regala luz <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Una pequeña dosis de sol</p>
+          <h1>Que hoy<br /><em>florezca</em><br />lo bonito.</h1>
+          <p class="hero-intro">Las flores amarillas llegan para recordarnos que siempre hay un motivo para mirar hacia arriba.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#jardin">Entrar al jardín <span aria-hidden="true">↓</span></a>
+            <button class="text-button" id="spark-button" type="button">Hazlo florecer <span aria-hidden="true">✦</span></button>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Ilustración animada de un jardín con flores amarillas">
+          <div class="sun" aria-hidden="true"><span></span></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="floating-word floating-word-one" aria-hidden="true">luz</div>
+          <div class="floating-word floating-word-two" aria-hidden="true">calma</div>
+          <div class="hill hill-back" aria-hidden="true"></div>
+          <div class="hill hill-front" aria-hidden="true"></div>
+          <div class="meadow-grass" aria-hidden="true"></div>
+
+          <div class="flower flower-a" aria-hidden="true">
+            <span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span>
+            <span class="petals"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+          </div>
+          <div class="flower flower-b" aria-hidden="true">
+            <span class="stem"></span><span class="leaf leaf-left"></span>
+            <span class="petals"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+          </div>
+          <div class="flower flower-c" aria-hidden="true">
+            <span class="stem"></span><span class="leaf leaf-right"></span>
+            <span class="petals"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+          </div>
+          <div class="flower flower-d" aria-hidden="true">
+            <span class="stem"></span>
+            <span class="petals"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+          </div>
+          <div class="flower flower-e" aria-hidden="true">
+            <span class="stem"></span><span class="leaf leaf-left"></span>
+            <span class="petals"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+          </div>
+
+          <div class="petal-field" id="petal-field" aria-hidden="true"></div>
+          <div class="art-note"><span class="note-line"></span> hoy es un buen día<br />para florecer</div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true"><span class="scroll-line"></span> baja despacio</div>
+      </section>
+
+      <section class="story section-grid" id="historia">
+        <div class="section-label reveal"><span>01</span><span class="label-line"></span><span>La historia</span></div>
+        <div class="story-content reveal">
+          <p class="kicker">Una flor con intención</p>
+          <h2>El amarillo no pide permiso para <em>brillar.</em></h2>
+          <p class="body-copy">Desde siempre, las flores amarillas han sido una forma sencilla de decir: pensé en ti. Son alegría, amistad, nuevos comienzos y esa energía que convierte un día normal en algo especial.</p>
+          <a class="underlined-link" href="#mensaje">Enviar un poco de sol <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="story-stamp reveal" aria-label="La flor amarilla representa alegría y nuevos comienzos">
+          <span class="stamp-flower" aria-hidden="true">✳</span>
+          <span>alegría<br />en estado<br /><em>flor</em></span>
+        </div>
+      </section>
+
+      <section class="garden" id="jardin">
+        <div class="garden-heading reveal">
+          <div>
+            <p class="kicker">Colección de luz</p>
+            <h2>Un jardín para<br /><em>quedarte un rato.</em></h2>
+          </div>
+          <p class="garden-side-note">Desliza, respira,<br />elige tu favorita <span aria-hidden="true">↘</span></p>
+        </div>
+
+        <div class="flower-cards">
+          <article class="flower-card card-sunflower reveal">
+            <div class="card-topline"><span>01 / 03</span><span>El valiente</span></div>
+            <div class="card-illustration sunflower-illustration" aria-hidden="true">
+              <span class="card-sun"></span><span class="card-stem"></span><span class="card-leaf"></span>
+              <span class="card-petals"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+            </div>
+            <h3>Girasol</h3>
+            <p>Para quien elige buscar la luz.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="flower-card card-daisy reveal">
+            <div class="card-topline"><span>02 / 03</span><span>La alegre</span></div>
+            <div class="card-illustration daisy-illustration" aria-hidden="true">
+              <span class="card-sun"></span><span class="card-stem"></span><span class="card-leaf"></span>
+              <span class="card-petals"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+            </div>
+            <h3>Margarita</h3>
+            <p>Para celebrar lo simple y bonito.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="flower-card card-marigold reveal">
+            <div class="card-topline"><span>03 / 03</span><span>La luminosa</span></div>
+            <div class="card-illustration marigold-illustration" aria-hidden="true">
+              <span class="card-sun"></span><span class="card-stem"></span><span class="card-leaf"></span>
+              <span class="card-petals"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+            </div>
+            <h3>Cempasúchil</h3>
+            <p>Para honrar la memoria con color.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="message section-grid" id="mensaje">
+        <div class="message-flower reveal" aria-hidden="true">
+          <span class="message-stem"></span><span class="message-leaf leaf-left"></span><span class="message-leaf leaf-right"></span>
+          <span class="message-petals"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+        </div>
+        <div class="message-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Para compartir</p>
+          <h2>Un detalle amarillo<br /><em>cambia el día.</em></h2>
+          <p class="body-copy">Manda esta página a alguien que necesite una señal bonita. A veces un poquito de color es justo lo que hacía falta.</p>
+          <button class="button button-dark" id="share-button" type="button">Compartir este jardín <span aria-hidden="true">↗</span></button>
+          <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span><span>flor<span class="brand-accent">amarilla</span></span></a>
+      <p>Hecho con intención y un poquito de sol.</p>
+      <a href="#inicio" class="back-top">Volver arriba <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
+
