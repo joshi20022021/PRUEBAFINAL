@@ -1,7 +1,5 @@
 const scene = document.querySelector('.scene');
-const bouquet = document.querySelector('#bouquet');
-const bouquetFlowers = document.querySelector('#bouquet-flowers');
-const flowerTemplate = document.querySelector('#flower-template');
+let bouquet = document.querySelector('#bouquet');
 const fieldTemplate = document.querySelector('#field-flower-template');
 const flowerField = document.querySelector('#flower-field');
 const butterflyField = document.querySelector('#butterfly-field');
@@ -13,40 +11,12 @@ const replayButton = document.querySelector('#replay');
 const cursorLight = document.querySelector('.cursor-light');
 const requestedScene = new URLSearchParams(window.location.search).get('scene');
 
-const bouquetLayout = [
-  { x: -118, height: 370, size: 82, rotate: -22, delay: .2 },
-  { x: 106, height: 385, size: 88, rotate: 20, delay: .45 },
-  { x: -67, height: 458, size: 96, rotate: -13, delay: .72 },
-  { x: 63, height: 475, size: 98, rotate: 13, delay: 1.02 },
-  { x: -5, height: 525, size: 108, rotate: 0, delay: 1.3 },
-  { x: -133, height: 475, size: 91, rotate: -27, delay: 1.58 },
-  { x: 129, height: 470, size: 90, rotate: 27, delay: 1.85 },
-  { x: -77, height: 555, size: 89, rotate: -12, delay: 2.12 },
-  { x: 78, height: 550, size: 92, rotate: 12, delay: 2.4 },
-  { x: 0, height: 590, size: 103, rotate: 1, delay: 2.7 },
-  { x: -170, height: 410, size: 75, rotate: -34, delay: 2.9 },
-  { x: 170, height: 420, size: 77, rotate: 34, delay: 3.08 },
-];
-
 const sceneCopy = {
   bouquet: { index: '00', text: 'Tu ramo está listo' },
   field: { index: '01', text: 'Un campo entero de luz' },
   butterflies: { index: '02', text: 'Mariposas entre las flores' },
   landscape: { index: '03', text: 'Todo florece al mismo tiempo' },
 };
-
-function buildBouquet() {
-  bouquetFlowers.replaceChildren();
-  bouquetLayout.forEach((flower) => {
-    const node = flowerTemplate.content.firstElementChild.cloneNode(true);
-    node.style.setProperty('--x', `${flower.x}px`);
-    node.style.setProperty('--height', `${flower.height}px`);
-    node.style.setProperty('--size', `${flower.size}px`);
-    node.style.setProperty('--rotate', `${flower.rotate}deg`);
-    node.style.setProperty('--delay', `${flower.delay}s`);
-    bouquetFlowers.appendChild(node);
-  });
-}
 
 function buildField() {
   const fragment = document.createDocumentFragment();
@@ -114,10 +84,9 @@ function replayBouquet() {
   document.body.classList.remove('ready');
   document.body.classList.add('intro-running');
   setScene('bouquet');
-  bouquet.style.display = 'none';
-  void bouquet.offsetWidth;
-  bouquet.style.display = '';
-  buildBouquet();
+  const freshBouquet = bouquet.cloneNode(true);
+  bouquet.replaceWith(freshBouquet);
+  bouquet = freshBouquet;
   sceneStatus.textContent = 'Armando tu ramo…';
   window.setTimeout(finishIntro, 5600);
 }
@@ -133,7 +102,6 @@ window.addEventListener('pointermove', (event) => {
   cursorLight.style.top = `${event.clientY}px`;
 });
 
-buildBouquet();
 buildField();
 buildButterflies();
 buildSparkles();
