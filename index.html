@@ -53,14 +53,87 @@
         <div class="sparkles" id="sparkles" aria-hidden="true"></div>
 
         <div class="bouquet-stage" aria-label="Ramo animado de flores amarillas">
-          <div class="bouquet" id="bouquet" aria-hidden="true">
-            <div class="bouquet-flowers" id="bouquet-flowers"></div>
-            <div class="paper paper-left"></div>
-            <div class="paper paper-right"></div>
-            <div class="paper paper-front"></div>
-            <div class="ribbon"><span></span><i></i><b></b></div>
-          </div>
-          <p class="bouquet-note">para recordarte<br />lo bonito de existir</p>
+          <svg class="bouquet" id="bouquet" viewBox="0 0 520 660" role="img" aria-label="Ramo de once flores amarillas">
+            <defs>
+              <linearGradient id="petal-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffea76" />
+                <stop offset="1" stop-color="#f4b719" />
+              </linearGradient>
+              <linearGradient id="paper-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fff0ce" />
+                <stop offset="1" stop-color="#e8c184" />
+              </linearGradient>
+              <filter id="bouquet-shadow" x="-30%" y="-30%" width="160%" height="180%">
+                <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#75520d" flood-opacity=".16" />
+              </filter>
+              <g id="yellow-flower">
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(45)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(90)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(135)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(180)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(225)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(270)" />
+                <ellipse class="svg-petal" cx="0" cy="-25" rx="14" ry="29" transform="rotate(315)" />
+                <circle cx="0" cy="0" r="16" fill="#8b520f" />
+                <circle cx="-4" cy="-5" r="5" fill="#b97a1a" opacity=".7" />
+              </g>
+            </defs>
+
+            <g class="svg-stems">
+              <path class="svg-stem" style="--d:.1s" pathLength="1" d="M260 500 Q258 280 260 82" />
+              <path class="svg-stem" style="--d:.35s" pathLength="1" d="M258 500 Q225 300 200 132" />
+              <path class="svg-stem" style="--d:.6s" pathLength="1" d="M262 500 Q286 290 325 127" />
+              <path class="svg-stem" style="--d:.85s" pathLength="1" d="M252 500 Q190 340 135 182" />
+              <path class="svg-stem" style="--d:1.1s" pathLength="1" d="M268 500 Q330 340 390 192" />
+              <path class="svg-stem" style="--d:1.35s" pathLength="1" d="M255 500 Q243 340 235 207" />
+              <path class="svg-stem" style="--d:1.6s" pathLength="1" d="M265 500 Q290 360 305 222" />
+              <path class="svg-stem" style="--d:1.85s" pathLength="1" d="M245 500 Q155 390 90 257" />
+              <path class="svg-stem" style="--d:2.1s" pathLength="1" d="M275 500 Q370 390 435 257" />
+              <path class="svg-stem" style="--d:2.35s" pathLength="1" d="M250 500 Q205 385 170 267" />
+              <path class="svg-stem" style="--d:2.6s" pathLength="1" d="M270 500 Q320 400 350 282" />
+            </g>
+
+            <g class="svg-leaves">
+              <ellipse class="svg-leaf" style="--d:1s" cx="235" cy="348" rx="25" ry="10" transform="rotate(22 235 348)" />
+              <ellipse class="svg-leaf" style="--d:1.2s" cx="285" cy="370" rx="25" ry="10" transform="rotate(-20 285 370)" />
+              <ellipse class="svg-leaf" style="--d:1.5s" cx="195" cy="333" rx="23" ry="9" transform="rotate(25 195 333)" />
+              <ellipse class="svg-leaf" style="--d:1.7s" cx="332" cy="340" rx="23" ry="9" transform="rotate(-25 332 340)" />
+              <ellipse class="svg-leaf" style="--d:2s" cx="150" cy="362" rx="22" ry="9" transform="rotate(31 150 362)" />
+              <ellipse class="svg-leaf" style="--d:2.2s" cx="382" cy="368" rx="22" ry="9" transform="rotate(-31 382 368)" />
+              <ellipse class="svg-leaf" style="--d:2.5s" cx="215" cy="408" rx="23" ry="9" transform="rotate(18 215 408)" />
+              <ellipse class="svg-leaf" style="--d:2.7s" cx="305" cy="420" rx="23" ry="9" transform="rotate(-18 305 420)" />
+            </g>
+
+            <g class="svg-blooms">
+              <g transform="translate(260 82) scale(1.05)"><g class="svg-bloom" style="--d:.75s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(200 132) scale(.92)"><g class="svg-bloom" style="--d:1s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(325 127) scale(.9)"><g class="svg-bloom" style="--d:1.25s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(135 182) scale(.84)"><g class="svg-bloom" style="--d:1.5s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(390 192) scale(.86)"><g class="svg-bloom" style="--d:1.75s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(235 207) scale(.73)"><g class="svg-bloom" style="--d:2s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(305 222) scale(.75)"><g class="svg-bloom" style="--d:2.25s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(90 257) scale(.68)"><g class="svg-bloom" style="--d:2.5s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(435 257) scale(.68)"><g class="svg-bloom" style="--d:2.75s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(170 267) scale(.66)"><g class="svg-bloom" style="--d:3s"><use href="#yellow-flower" /></g></g>
+              <g transform="translate(350 282) scale(.67)"><g class="svg-bloom" style="--d:3.2s"><use href="#yellow-flower" /></g></g>
+            </g>
+
+            <g class="svg-wrap" filter="url(#bouquet-shadow)">
+              <path class="wrap-side wrap-left" d="M112 337 L260 445 L245 650 L164 610 Z" />
+              <path class="wrap-side wrap-right" d="M408 337 L260 445 L275 650 L356 610 Z" />
+              <path class="wrap-front" d="M145 397 L260 468 L375 397 L326 646 Q260 666 194 646 Z" />
+              <path class="wrap-fold" d="M145 397 L260 468 L184 442 Z" />
+              <path class="wrap-fold" d="M375 397 L260 468 L336 442 Z" />
+            </g>
+            <g class="svg-ribbon" transform="translate(260 526)">
+              <ellipse cx="-25" cy="0" rx="28" ry="16" fill="none" stroke="#e7a313" stroke-width="11" />
+              <ellipse cx="25" cy="0" rx="28" ry="16" fill="none" stroke="#e7a313" stroke-width="11" />
+              <circle r="12" fill="#c9860d" />
+              <path d="M-5 9 L-31 69 L0 54 L10 13 Z" fill="#e7a313" />
+              <path d="M5 9 L31 69 L0 54 L-10 13 Z" fill="#d89510" />
+            </g>
+          </svg>
         </div>
 
         <div class="intro-progress" aria-hidden="true">
@@ -102,17 +175,6 @@
         <p>Hecho con cariño <span aria-hidden="true">✦</span></p>
       </footer>
     </main>
-
-    <template id="flower-template">
-      <div class="bouquet-flower">
-        <span class="flower-stem"></span>
-        <span class="flower-leaf leaf-a"></span>
-        <span class="flower-leaf leaf-b"></span>
-        <span class="flower-head">
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b>
-        </span>
-      </div>
-    </template>
 
     <template id="field-flower-template">
       <span class="field-flower">
